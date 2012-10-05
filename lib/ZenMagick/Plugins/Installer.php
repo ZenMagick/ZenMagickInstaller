@@ -18,7 +18,7 @@
  * Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-namespace ZenMagick\Plugins\Installer;
+namespace ZenMagick\Plugins;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
@@ -30,9 +30,9 @@ class Installer extends LibraryInstaller {
     public function getInstallPath(PackageInterface $package) {
         $prefix = substr ($package->getPrettyName (), 0, 17);
         if ('zenmagick/plugin-' !== $prefix) {
-            throw new \InvalidArgumentException (
+            throw new \InvalidArgumentException(
                 'Unable to install plugin, ZenMagick plugin package names  should always begin with "zenmagick/plugin-"'
-            ;
+            );
         }
 
         return 'plugins/'.substr($package->getPrettyName(), 17);
