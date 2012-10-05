@@ -1,0 +1,26 @@
+{
+    "name": "zenmagick/plugin-installer",
+    "type": "composer-installer",
+    "description": "Composer installer for ZenMagick plugins.",
+    "homepage": "http://github.com/ZenMagick",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Martin Rademacher",
+            "email": "mano@zenmagick.org",
+            "homepage": "http://www.radebatz.net"
+        },
+        {
+            "name": "John Robeson",
+            "email": "johnny@localmomentum.net"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "ZenMagick\\Plugins\\Installer": "lib/"
+        }
+    },
+    "extra": {
+        "class": "ZenMagick\\Plugins\\Installer"
+    }
+}
