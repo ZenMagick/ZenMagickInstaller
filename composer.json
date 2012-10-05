@@ -1,8 +1,8 @@
 {
-    "name": "zenmagick/plugin-installer",
+    "name": "zenmagick/zenmagick-installer",
     "type": "composer-installer",
-    "description": "Composer installer for ZenMagick plugins.",
-    "homepage": "http://github.com/ZenMagick",
+    "description": "Composer installer for ZenMagick addons.",
+    "homepage": "http://github.com/ZenMagick/ZenMagickInstaller",
     "license": "GPL-2.0+",
     "authors": [
         {
@@ -17,7 +17,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "ZenMagick\\Plugins\\Installer": "lib/"
+            "ZenMagick\\": "lib/"
         }
     },
     "extra": {
