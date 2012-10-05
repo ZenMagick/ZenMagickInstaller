@@ -21,6 +21,9 @@
         }
     },
     "extra": {
-        "class": "ZenMagick\\Plugins\\Installer"
+        "class": [
+            "ZenMagick\\Plugins\\Installer",
+            "ZenMagick\\Themes\\Installer"
+        ]
     }
 }
